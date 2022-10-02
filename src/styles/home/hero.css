@@ -1,0 +1,37 @@
+.hero{
+    width: 100vw;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero article{
+    position: absolute;
+    color: white;
+    transition: color 0.3s;
+    left: var(--separation-left);
+    bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    fill: var(--color-red);
+}
+
+.hero article:hover{
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+.hero h2{
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero h3{
+    font-size: 30px;
+    width: 50%;
+    padding-left: 50px;
+}

@@ -1,0 +1,99 @@
+.models{
+    width: 100vw;
+}
+
+.models h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0;
+    padding: 0 var(--separation-left);
+}
+
+.container_models {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.container_models .model{
+    position: relative;
+    width: 100%;
+    height: 100%;   
+}
+
+.container_models .model img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container_models .model article{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    top: 20px;
+    left: 30px;
+}
+
+.container_models .model article .price{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container_models .model .buttons{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    display: flex;
+}
+
+.container_models .model .buttons svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.container_models .model .buttons .config{
+    background: none;
+    border: none;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.container_models .model .buttons .config:hover{
+    background-color: var(--color-red);
+    color: white;
+    fill: white;
+}
+
+.container_models .model .buttons .description{
+    background: none;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0 20px;
+    fill: white;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.container_models .model .buttons .description:hover{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    fill: var(--color-red);
+}
+
+/* paragraph */
+
+.models .paragraph{
+    margin: 20px 0;
+    padding-left: var(--separation-left);
+}

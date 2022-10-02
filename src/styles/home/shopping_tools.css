@@ -1,0 +1,44 @@
+.shopping_tools{
+    padding: 0 var(--separation-left);
+    margin-top: 100px;
+}
+
+.shopping_tools h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.shopping_tools .tool{
+    margin-top: 30px;
+    height: 40vh;
+    width: 35vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.shopping_tools .tool:hover article{
+    color: var(--color-red);
+}
+
+.shopping_tools .tool img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shopping_tools .tool article{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    fill: var(--color-red);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shopping_tools .tool article svg{
+    width: 15px;
+    margin-right: 5px;
+}

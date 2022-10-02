@@ -1,0 +1,46 @@
+.find{
+    padding: 0 var(--separation-left);
+    margin-top: 90px;
+    font-weight: bold;
+}
+
+.find h2{
+    font-size: 40px;
+}
+
+.find .cars_container{
+    margin-top: 30px;
+    display: flex;
+}
+
+.find .cars_container .cars{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   text-decoration: none;
+}
+
+.find .cars_container .cars:hover button{
+    background-color: var(--color-red);
+}
+
+.find .cars_container .cars button{
+    width: 50%;
+    border: none;
+    background-color: var(--color-grey);
+    color: white;
+    fill: white;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+.find .cars_container .cars button svg{
+    width: 10px;
+    margin-right: 10px;
+}

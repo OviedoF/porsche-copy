@@ -1,0 +1,95 @@
+.porsche_live{
+    padding: 0 var(--separation-left);
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.porsche_live h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.porsche_live .images_container{
+    margin-top: 30px;
+    display: grid;
+    height: 80%;
+    width: 100%;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.porsche_live .images_container .card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.porsche_live .images_container .card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FEFEFE70;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.porsche_live .images_container .card:hover::before{
+    opacity: 1;
+}
+
+.porsche_live .images_container .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.porsche_live .images_container .card svg{
+    position: absolute;
+    width: 20px;
+    bottom: 10px;
+    fill: white;
+    right: 10px;
+}
+
+.porsche_live .images_container #porsche_live_1{
+    grid-column: 1 /span 2;
+    grid-row: 1 / span 2;
+}
+
+.porsche_live .images_container #porsche_live_4{
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.porsche_live .images_container #porsche_live_7{
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.porsche_live .view_more{
+    display: flex;
+    justify-content: flex-end;
+}
+.porsche_live a{
+    background-color: var(--color-grey);
+    text-decoration: none;
+    color: white;
+    fill: white;
+    margin-top: 40px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+
+.porsche_live a:hover{
+    background-color: var(--color-red);
+}
+
+.porsche_live a svg{
+    width: 15px;
+    margin-right: 15px;
+}
